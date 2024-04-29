@@ -70,3 +70,49 @@ pub fn counting_sort_proof_stability(v: &mut Vec<(usize, usize)>, k: usize) {
     v.append(&mut w);
 
 }
+
+pub fn selection_sort<T: PartialOrd + Copy>(v: &mut Vec<T>) {
+
+    for k in 0..(v.len() - 1) {
+
+        let mut min = v[k];
+
+        let mut pos = k;
+
+        for i in (k + 1)..v.len() {
+
+            if v[i] < min {
+
+                min = v[i];
+
+                pos = i
+
+            }
+        }
+
+        v.swap(pos, k)
+    }
+}
+
+pub fn selection_sort_proof_stability<T: PartialOrd + Copy>(v: &mut Vec<(T, usize)>) {
+
+    for k in 0..(v.len() - 1) {
+
+        let mut min = v[k].0;
+
+        let mut pos = k;
+
+        for i in (k + 1)..v.len() {
+
+            if v[i].0 < min {
+
+                min = v[i].0;
+
+                pos = i
+
+            }
+        }
+
+        v.swap(pos, k)
+    }
+}
