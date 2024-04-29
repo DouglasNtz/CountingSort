@@ -1,5 +1,6 @@
 Function: Counting_sort
 Número de experimentos: 100
 Tamanho da lista de números: 5000
+Valor de k: 150000
 Tempo total: 18.475054ms
 

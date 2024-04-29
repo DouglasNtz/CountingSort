@@ -35,6 +35,7 @@ fn main() {
     println!(r###"Function: Counting_sort
 Número de experimentos: {numero_experimentos}
 Tamanho da lista de números: {tamanho_lista}
+Valor de k: {maximo}
 Tempo total: {:?}
 "###, times.iter().sum::<Duration>());
 

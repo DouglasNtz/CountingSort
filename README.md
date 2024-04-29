@@ -15,6 +15,7 @@ cargo run --release 100 5000 150000
 Function: Counting_sort
 Número de experimentos: 100
 Tamanho da lista de números: 5000
+Valor de k: 150000
 Tempo total: 22.824805ms
 
 O detalhe é que o Counting Sort é estável, enquanto o Heap Sort não é. A versão estável do Heap Sort é mais lenta.
